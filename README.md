@@ -22,3 +22,6 @@
   5-Calcul de score
   6-Interactions pièces
   7-Configuration du jeu (Menu)
+
+-Nous avons utilisé le modèle d'architecture en MVC pour ce projet
+

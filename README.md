@@ -9,4 +9,16 @@
   .La touche "direction Gauche" pour déplacer la pièce vers la gauche
   .La touche "direction Droite" pour déplacer la pièce vers la droite
   .La touche "espace" pour faire descendre la pièce directement
--singleton, builder, factory
+-Exercie Design Pattern:
+  .singleton: nous avons pu garantir qu'une unique instance d'une classe donnée soit créée, nous avons aussi offert un point d'accès      universel à cette instance
+  .builder dans la classe Board.java
+  .factory
+  
+-Voici nos composantes:
+  1-Gestionnaire des entrées utilisateurs
+  2-Gestionnaire de l'affichage
+  3-Pièces provider
+  4-Score peristant
+  5-Calcul de score
+  6-Interactions pièces
+  7-Configuration du jeu (Menu)

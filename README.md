@@ -25,3 +25,5 @@
 
 -Nous avons tenté d'utiliser le modèle d'architecture en MVC pour ce projet
 
+-Pour les tests nous avons utilisé JUnit pour les tests
+

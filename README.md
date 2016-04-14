@@ -9,4 +9,4 @@
   .La touche "direction Gauche" pour déplacer la pièce vers la gauche
   .La touche "direction Droite" pour déplacer la pièce vers la droite
   .La touche "espace" pour faire descendre la pièce directement
--
+-singleton, builder, factory

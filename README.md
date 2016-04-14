@@ -12,7 +12,7 @@
 -Exercie Design Pattern:
   .singleton: nous avons pu garantir qu'une unique instance d'une classe donnée soit créée, nous avons aussi offert un point d'accès      universel à cette instance
   .builder dans la classe Board.java
-  .factory
+  .factory dans la classe Board.java 
   
 -Voici nos composantes:
   1-Gestionnaire des entrées utilisateurs
@@ -23,5 +23,5 @@
   6-Interactions pièces
   7-Configuration du jeu (Menu)
 
--Nous avons utilisé le modèle d'architecture en MVC pour ce projet
+-Nous avons tenté d'utiliser le modèle d'architecture en MVC pour ce projet
 

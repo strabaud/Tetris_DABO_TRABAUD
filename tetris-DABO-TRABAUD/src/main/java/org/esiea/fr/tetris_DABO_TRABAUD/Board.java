@@ -6,6 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -34,6 +37,8 @@ public class Board extends JPanel implements ActionListener {
     JLabel statusBar;
     Shape curPiece;
     Tetriminos[] board;
+    
+    final String bestScore="bestscore.txt";
 
 
 
@@ -249,6 +254,32 @@ public class Board extends JPanel implements ActionListener {
         g.drawLine(x + squareWidth() - 1, y + squareHeight() - 1,
                          x + squareWidth() - 1, y + 1);
     }
+    
+    public boolean testBestScore(int score,int bScore ){
+		return true;
+    }
+    
+    
+    public void writeScore(String file, String score)
+	{
+		String fileAdress = System.getProperty("user.dir") + "/"+ file;
+	
+		//try catch
+		try
+		{
+			FileWriter fw = new FileWriter(fileAdress, true);
+			BufferedWriter output = new BufferedWriter(fw);
+			output.write(score);
+			output.flush();
+			output.close();
+
+		}
+		catch(IOException ioe){
+			System.out.print("Erreur ecriture Meilleur Score ");
+			ioe.printStackTrace();
+			}
+
+	}
 
     class TAdapter extends KeyAdapter {
          public void keyPressed(KeyEvent e) {
@@ -294,3 +325,4 @@ public class Board extends JPanel implements ActionListener {
          }
      }
 }
+
